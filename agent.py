@@ -11,7 +11,7 @@ def clear():
     if name == 'nt': 
         _ = system('cls')
   
-    # Clear on mac and linux. (os.name is 'posix') 
+    # Clear on Mac and Linux. (os.name is 'posix') 
     else: 
         _ = system('clear')
 
@@ -21,11 +21,11 @@ clear()
 
 env = gym.make("Taxi-v3").env # Setup the Gym Environment
 
-# Make a new array filled with zeros.
-# The array will be 500x6 as there are 500 states and 6 actions.
+# Make a new matrix filled with zeros.
+# The matrix will be 500x6 as there are 500 states and 6 actions.
 q_table = numpy.zeros([env.observation_space.n, env.action_space.n])
 
-training_episodes = 20000 #Amount of times to run environment while training.
+training_episodes = 20000 # Amount of times to run environment while training.
 display_episodes = 10 # Amount of times to run environment after training.
 
 # Hyperparameters
@@ -52,7 +52,7 @@ for i in range(training_episodes):
 
         next_state, reward, done, info = env.step(action) 
         
-        old_value = q_table[state, action] # Retreive old value from the q-table.
+        old_value = q_table[state, action] # Retrieve old value from the q-table.
         next_max = numpy.max(q_table[next_state])
 
         # Update q-value for current state.
