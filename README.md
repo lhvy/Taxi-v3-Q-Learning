@@ -1,5 +1,10 @@
 # Taxi-v3 Q-Learning
  A simple Q-learning implementation in OpenAI Gym's "Taxi-v3" environment.
+ 
+## What is OpenAI Gym?
+[OpenAI Gym](https://gym.openai.com/) is a toolkit for developing and comparing reinforcement algorithms. It provides a wide range of environments with different reinforcement learning tasks.
+
+It can be found on GitHub [here](https://github.com/openai/gym) and documentation is [here.](https://gym.openai.com/docs)
 
 ## Setup & Running the code.
 Python 3 is required and can be downloaded [here.](https://www.python.org/downloads/)
@@ -11,3 +16,7 @@ pip install -r requirements.txt
 ```
 py agent.py
 ```
+
+## Possible Improvements
+- Command line arguments to modify the amount of training and demonstration episodes.
+- Tuning alpha, gamma and epsilon by decaying over training episodes.
