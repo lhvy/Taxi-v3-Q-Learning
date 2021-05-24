@@ -10,7 +10,7 @@ It can be found on GitHub [here](https://github.com/openai/gym) and documentatio
 Python 3 is required and can be downloaded [here.](https://www.python.org/downloads/)
 ### Installing required libraries.
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ### Running the agent.
 ```
@@ -18,5 +18,6 @@ py agent.py
 ```
 
 ## Possible Improvements
-- Command line arguments to modify the amount of training and demonstration episodes.
+- Command line arguments to modify the amount of training episodes.
+- Saving and loading the q-table.
 - Tuning alpha, gamma and epsilon by decaying over training episodes.
