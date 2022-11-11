@@ -40,7 +40,7 @@ all_penalties = []
 """Training the Agent"""
 
 for i in range(training_episodes):
-    state = env.reset()
+    state = env.reset()[0] # Reset returns observation state and other info. We only need the state.
     done = False
     penalties, reward, = 0, 0
     
